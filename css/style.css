@@ -9,10 +9,21 @@
 
 }
 .jumbotron2 {
-    background-color: #e2edff;
+    background-color: #C2D9FF;
 
+}
+.spacer {
+    padding-top: 3rem;
+    
+
+}
+.spacer2 {
+    padding-top: 1rem;  
+}
+.spacer3 {
+    padding-top: 4rem;  
 }
 
 .mb-4 .row {
-    background-color: #e2edff;
+    background-color: #C2D9FF;
 }
