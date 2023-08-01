@@ -1,0 +1,18 @@
+.container .row p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    background-color: #e2edff;
+
+}
+.jumbotron2 {
+    background-color: #e2edff;
+
+}
+
+.mb-4 .row {
+    background-color: #e2edff;
+}
