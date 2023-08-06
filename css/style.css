@@ -34,7 +34,10 @@
 }
 
 
+body{
 
+  overflow-x: hidden;
+}
 
 
 .header {
