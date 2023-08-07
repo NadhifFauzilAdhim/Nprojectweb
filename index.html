@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NProject | Arabis Group</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" tpye="image/x-icon" href="assets/img/favicon.ico">
@@ -53,9 +54,9 @@
 
       <div class="jumbotron text-center">
         <img src="assets/img/author.png" class="rounded-circle border border-4 " width="200px" alt="author">
-        <h1>Nadhif Fauzil Adhim</h1>
-        <p>Student | Web Developer Beginner</p>
-        <div class="spacer3">
+        <h1 class="authorname">Nadhif Fauzil Adhim</h1>
+        <p class="role"></p>
+        <div class="spacer3" >
           <svg
             class="waves"
             xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +97,7 @@
       </div>
       
     </div>
+    <!-- About Section -->
     <section class="about spacer3" id="about">
         <div class="container">
         <div class="row">
@@ -105,10 +107,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center " data-aos="fade-in"  data-aos-duration="1000"> 
                 <img  src="assets/img/learning.png" alt="Learning" width="200px">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8" data-aos="fade-in"  data-aos-duration="1000">
                 <p class="text-center">Hayy!! My name is Nadhif Fauzil Adhim. I am a computer science student at AMIKOM University in Yogyakarta. I have a strong interest in the world of technology, especially in the fields of computer science, Web Develoment, and IOT. </p>
                 <p class="text-center">Furthermore, I am also interested in innovation and the latest developments in technology. I always keep myself up-to-date with the latest advancements and seek to improve myself to contribute to the creation of innovative and beneficial technological solutions for society.</p>
             </div>
@@ -117,7 +119,7 @@
     </section>
 
     <section class="skills spacer2" id="skills">
-      <div class="container">
+      <div class="container " data-aos="fade-in"  data-aos-duration="1000" >
         <div class="row spacer2 text-center">
           <div class="col-md-12">
             <P>Learning Progress</P>
@@ -154,15 +156,16 @@
       </div>
     </section>
 
+    <!-- Education section -->
     <section class="education spacer3" id="education">
-      <div class="container spacer3">
+      <div class="container spacer3 " data-aos="fade-in"  data-aos-offset="100" data-aos-duration="1000">
       <div class="row">
           <div class="col-xm-12">
               <h2 class="text-center">Education</h2>
           </div>
       </div>
       <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center ">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Universitas Amikom Jogjakarta
@@ -190,7 +193,7 @@
        
 </section>
   <section class="experience spacer" id="experience">
-    <div class="container ">
+    <div class="container " data-aos="fade-in"  data-aos-offset="100" data-aos-duration="1000">
     <div class="row ">
         <div class="col-xm-12">
             <h2 class="text-center">Organization Experience</h2>
@@ -268,10 +271,10 @@
 
     <!--Section: Contact v.2-->
 <section class="mb-4" id="contact">
-    <div class="row">
-         <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+    <div class="row " >
+         <h2 class="h1-responsive font-weight-bold text-center my-4" data-aos="fade-in"  data-aos-duration="1000">Contact me</h2>
         <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
+        <div class="col-md-9 mb-md-0 mb-5 " data-aos="fade-in"  data-aos-duration="1000">
             <form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
 
                 <!--Grid row-->
@@ -364,8 +367,24 @@
           © 2023 Copyright: Nadhif Fauzil Adhim | 
           <a class="text-dark" href="http://arabisgroup.cloud/">Arabis Group</a>
         </div>
-        <!-- Copyright -->
       </footer>
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          once: true,
+          duration: 2000,
+        });
+      </script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+       <script>
+         gsap.registerPlugin(TextPlugin);
+         gsap.to('.role', {duration: 2, text: 'Student | Web Developer Beginner'});
+         gsap.from('.jumbotron img', {duration: 1, opacity: 0, ease:'sine' });
+         gsap.from('.navbar', {duration: 1, y: '-100%', opacity: 0})
+         gsap.from('.authorname', {duration:1, opacity: 0, ease:'sine'})
+       </script>
+      <script src="js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
