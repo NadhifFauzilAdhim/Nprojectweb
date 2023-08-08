@@ -270,7 +270,7 @@
     <div class="row " >
          <h2 class="h1-responsive font-weight-bold text-center my-4" data-aos="fade-in"  data-aos-duration="1000">Contact me</h2>
         <div class="col-md-12 mb-md-0 mb-5 " data-aos="fade-in"  data-aos-duration="1000">
-            <form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
+            <form id="contact-form" name="contact-form" method="POST">
                 <div class="row justify-content-around">
                     <div class="col-md-4">
                         <div class="md-form mb-0 text-center">
@@ -303,7 +303,7 @@
                 </div>             
             </form>
             <div class="text-center text-md-left p-3">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a id="btn" class="btn btn-primary">Send</a>
             </div>
         </div>
     </div>
@@ -333,5 +333,29 @@
          gsap.from('.authorname', {duration:1, opacity: 0, ease:'sine'})
        </script>
       <script src="js/bootstrap.bundle.min.js" ></script>
+      <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+      <script>
+        var btn = document.getElementById('btn');
+          btn.addEventListener('click', function(e) {
+          e.preventDefault()
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var subject = document.getElementById('subject').value;
+          var message = document.getElementById('message').value;
+          var body = 'name:' +name + '<br/> email: ' +email + '<br/> subject: ' +subject
+          + '<br/> message: ' +message;
+
+          Email.send({
+          SecureToken : "835533b4-e3f1-4f31-b1a6-71bbd361a843",
+          To : 'analyticgames@gmail.com',
+          From : "nadya.15.a3@gmail.com",
+          Subject : "Contact Message",
+          Body : body
+          }).then(
+          message => alert(message)
+          );
+        })
+      </script>
   </body>
 </html>
