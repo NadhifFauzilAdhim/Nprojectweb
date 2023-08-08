@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NProject | Arabis Group</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" tpye="image/x-icon" href="assets/img/favicon.ico">
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e04db0b-6c8c-4e95-a60b-49c6607ff0c3";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -51,6 +51,7 @@
           </div>
         </div>
       </nav>
+        
 
       <div class="jumbotron text-center">
         <img src="assets/img/author.png" class="rounded-circle border border-4 " width="200px" alt="author">
@@ -94,14 +95,13 @@
             </g>
           </svg>
         </div>
-      </div>
-      
+      </div>      
     </div>
     <!-- About Section -->
     <section class="about spacer3" id="about">
         <div class="container">
         <div class="row">
-            <div class="col-xm-12">
+            <div class="col-md-12">
                 <h2 class="text-center">About Me</h2>
                 <hr>
             </div>
@@ -117,7 +117,7 @@
         </div>
         </div>
     </section>
-
+<!-- Skils Section -->
     <section class="skills spacer2" id="skills">
       <div class="container " data-aos="fade-in"  data-aos-duration="1000" >
         <div class="row spacer2 text-center">
@@ -127,7 +127,7 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
-            <div class="progress">
+            <div class="progress">  
               <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">C#</div>
             </div>
           </div>
@@ -185,13 +185,12 @@
               </li>
             </ul>
           </div>
-          
       </div>
       </div>
   </section>
   <section>
-       
 </section>
+<!-- Experience -->
   <section class="experience spacer" id="experience">
     <div class="container " data-aos="fade-in"  data-aos-offset="100" data-aos-duration="1000">
     <div class="row ">
@@ -220,11 +219,10 @@
             </li>
           </ul>
         </div>
-        
     </div>
     </div>
 </section>
-
+  <!-- WaveSVG -->
     <section>
       <div class="jumbotron2">
         <div class="spacer3">
@@ -247,122 +245,71 @@
                 xlink:href="#gentle-wave"
                 x="48"
                 y="0"
-                fill="rgba(194,217,256,0.7)"
+                fill="rgba(226, 237, 255,0.7)"
               />
               <use
                 xlink:href="#gentle-wave"
                 x="48"
                 y="3"
-                fill="rgba(194, 217, 256,0.5)"
+                fill="rgba(226, 237, 255,0.5)"
               />
               <use
                 xlink:href="#gentle-wave"
                 x="48"
                 y="5"
-                fill="rgba(194, 217, 256,1)"
+                fill="rgba(226, 237, 255,1)"
               />
-              
             </g>
           </svg>
-        </div>
-  
+        </div>  
       </div>
   </section>
 
-    <!--Section: Contact v.2-->
+  <!-- Contact Form -->
 <section class="mb-4" id="contact">
     <div class="row " >
          <h2 class="h1-responsive font-weight-bold text-center my-4" data-aos="fade-in"  data-aos-duration="1000">Contact me</h2>
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5 " data-aos="fade-in"  data-aos-duration="1000">
+        <div class="col-md-12 mb-md-0 mb-5 " data-aos="fade-in"  data-aos-duration="1000">
             <form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
+                <div class="row justify-content-around">
+                    <div class="col-md-4">
                         <div class="md-form mb-0 text-center">
                             <label for="name" class="">Your name</label>
                             <input type="text" id="name" name="name" class="form-control">
-                            
                         </div>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="md-form mb-0 text-center">
                             <label for="email" class="">Your email</label>
                             <input type="text" id="email" name="email" class="form-control">
-                            
                         </div>
                     </div>
-                    <!--Grid column-->
-
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0 text-center">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="md-form mb-0 text-center ">
                             <label for="subject" class="">Subject</label>
                             <input type="text" id="subject" name="subject" class="form-control">
-                            
                         </div>
                     </div>
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
                 <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
+                    <div class="col-md-10 offset-md-1">
                         <div class="md-form text-center">
                             <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
-                            
+                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>                          
                         </div>
-
                     </div>
-                </div>
-                <!--Grid row-->
-
+                </div>             
             </form>
-
-            <div class="text-center text-md-left">
+            <div class="text-center text-md-left p-3">
                 <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
-            <div class="status"></div>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Jogjakarta, 55672</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>085727785062</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-            
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
     </div>
 </section>
-<!--Section: Contact v.2-->
+      <!-- Copyright -->
     <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2023 Copyright: Nadhif Fauzil Adhim | 
           <a class="text-dark" href="http://arabisgroup.cloud/">Arabis Group</a>
@@ -385,6 +332,6 @@
          gsap.from('.navbar', {duration: 1, y: '-100%', opacity: 0})
          gsap.from('.authorname', {duration:1, opacity: 0, ease:'sine'})
        </script>
-      <script src="js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.bundle.min.js" ></script>
   </body>
 </html>
